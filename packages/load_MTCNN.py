@@ -29,7 +29,7 @@ def load_MTCNN(DATA_PATH):
             print('Origin: Number of images: %d' % len(paths)) #人臉總數
 
             #------------載入Facenet模型------------#
-            modeldir =  /content/gdrive/My Drive/Colab Notebooks/facenet/20180402-114759/20180402-114759.pb
+            modeldir =  '/content/gdrive/My Drive/Colab Notebooks/facenet/20180402-114759/20180402-114759.pb'
             facenet.load_model(modeldir)
 
             images_placeholder = tf.get_default_graph().get_tensor_by_name("input:0")

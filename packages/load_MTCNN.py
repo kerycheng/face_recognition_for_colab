@@ -1,4 +1,4 @@
-import os
+﻿import os
 import math
 import numpy as np
 import tensorflow as tf
@@ -15,7 +15,7 @@ def load_MTCNN(DATA_PATH):
             
             IMG_OUT_PATH = os.path.join(DATA_PATH, "dataset") #image目錄
             
-            FACENET_DATA_PATH = os.path.join(DATA_PATH, "facenet","20180402-114759","20180402-114759.pb") #dacenet路徑
+          #  FACENET_DATA_PATH = os.path.join(DATA_PATH, "facenet","20180402-114759","20180402-114759.pb") #dacenet路徑
 
             datadir = IMG_OUT_PATH # 經過偵測、對齊 & 裁剪後的人臉圖像目錄
 
@@ -29,7 +29,7 @@ def load_MTCNN(DATA_PATH):
             print('Origin: Number of images: %d' % len(paths)) #人臉總數
 
             #------------載入Facenet模型------------#
-            modeldir =  FACENET_DATA_PATH
+            modeldir =  /content/gdrive/My Drive/Colab Notebooks/facenet/20180402-114759/20180402-114759.pb
             facenet.load_model(modeldir)
 
             images_placeholder = tf.get_default_graph().get_tensor_by_name("input:0")

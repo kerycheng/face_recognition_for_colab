@@ -3,8 +3,10 @@ import math
 import numpy as np
 import tensorflow as tf
 
+from matplotlib.pyplot import imread
 from tqdm import tqdm
 from data import facenet
+
 
 
 def load_MTCNN(DATA_PATH):

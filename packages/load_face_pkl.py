@@ -1,20 +1,21 @@
+﻿
 import os
 import pickle
 
-def load_face_pkl(path, DATA_PATH):
+def load_face_pkl(path, COLAB_PATH):
     
     # 人臉特徵
-    with open(os.path.join(DATA_PATH+'/recognizer','lfw_emb_features.pkl'), 'rb') as emb_features_file:
+    with open(os.path.join(COLAB_PATH +'/recognizer','lfw_emb_features.pkl'), 'rb') as emb_features_file:
         emb_features =pickle.load(emb_features_file)
         #print(emb_features)
 
     # 矩陣
-    with open(os.path.join(DATA_PATH+'/recognizer','lfw_emb_labels.pkl'), 'rb') as emb_lables_file:
+    with open(os.path.join(COLAB_PATH +'/recognizer','lfw_emb_labels.pkl'), 'rb') as emb_lables_file:
         emb_labels =pickle.load(emb_lables_file)
         #print(emb_labels)
 
     # user_ids
-    with open(os.path.join(DATA_PATH+'/recognizer','lfw_emb_labels_dict.pkl'), 'rb') as emb_lables_dict_file:
+    with open(os.path.join(COLAB_PATH +'/recognizer','lfw_emb_labels_dict.pkl'), 'rb') as emb_lables_dict_file:
         emb_labels_dict =pickle.load(emb_lables_dict_file)
         #print(emb_labels_dict)
 

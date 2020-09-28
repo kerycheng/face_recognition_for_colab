@@ -1,8 +1,9 @@
-import os
+﻿import os
 import cv2
 import numpy as np
 from PIL import Image
 from data import facenet
+from google.colab.patches import cv2_imshow
 
 def getImagesWithID(DATA_PATH):
 

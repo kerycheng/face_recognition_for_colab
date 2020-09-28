@@ -3,7 +3,6 @@ import cv2
 import numpy as np
 from PIL import Image
 from data import facenet
-from google.colab.patches import cv2_imshow
 
 def getImagesWithID(DATA_PATH):
 
@@ -33,7 +32,5 @@ def getImagesWithID(DATA_PATH):
             Ids.append(ID)
             
             #print ID
-            cv2.imshow("training", faceNp)
-            cv2.waitKey(10)
         return np.array(Ids), np.array(faces) # 回傳ids faces
     
